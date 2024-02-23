@@ -25,10 +25,10 @@ class ItemViewSet(viewsets.ModelViewSet):
 class FetchAndUpdateCityData(APIView):
     client = OpenAI(
     # This is the default and can be omitted
-        api_key= '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',
+        api_key= 'API-KEY',
     )
 
-    genai.configure(api_key='AIzaSyB36wvdCyZku46Vv1Iavcf0YUlbLKs5Tsk')
+    genai.configure(api_key='API-KEY')
 
     """  def get(self, request, *args, **kwargs):        
         city_name = request.data.get('name')
